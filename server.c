@@ -70,7 +70,6 @@ void run_session(int conn) {
         memcpy(args[i], buf, BUF_SZ);
     }
     fclose(cmd_args);
-    // fclose(input_cmd);
     // redirect IO and execute command
     // subprocess read from first_pipe and write to pipe
     int fd[2];
